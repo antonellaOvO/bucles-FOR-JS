@@ -8,8 +8,6 @@ function showNumbers(event) {
     let element = document.getElementById("numberTitle");
     element.textContent = `${number}`;
   }
-  return number;
-  console.log(number);
 }
 let button = document.getElementById("button");
 button.addEventListener("click", showNumbers);
