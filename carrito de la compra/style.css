@@ -1,0 +1,12 @@
+.row {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+
+legend {
+  font-weight: bold;
+}
+
+#resultValueBill {
+  font-weight: bold;
+}
