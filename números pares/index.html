@@ -16,13 +16,36 @@
   <body>
     <div class="my-5 mx-5 p-3 text-center">
       <h2 class="me-5 p-3 text-white bg-dark">
-        Dale al botón, y tendrás los números pares entre dos números que
-        introduzcas
+        Dale al botón, y tendrás los números pares que hay entre el rango de los
+        dos números que introduzcas
       </h2>
       <button type="button" class="my-5 btn btn-success" id="button">
         Mostrar Números
       </button>
-      <h3 id="numberTitle"></h3>
+      <div class="campo mb-3">
+        <label for="numeroOne" class="form-label">Número 1:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="numeroOne"
+          name="numeroOne"
+          placeholder="30"
+          required
+        />
+      </div>
+      <div class="campo mb-3">
+        <label for="numeroTwo" class="form-label">Número 2:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="numeroTwo"
+          name="numeroTwo"
+          placeholder="30"
+          required
+        />
+      </div>
+
+      <h3 class="my-5" id="numberTitle"></h3>
     </div>
 
     <!-- Link Bootstrap JS-->
