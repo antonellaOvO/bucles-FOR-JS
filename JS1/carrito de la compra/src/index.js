@@ -36,29 +36,14 @@ function submit(event) {
       messageBodyModal.textContent = `Wow tu descuento es de ${totalDiscount}€!! Eso es un gran descuento! En total sólo pagarás ${totalWithDiscount}€😉`;
     } else if (resultado <= 100) {
       resultTotal.innerHTML = `PRECIO TOTAL: ${resultado}€`;
-      resultDiscount.innerHTML = `NO HAY DESCUENTO ☹`;
+      resultDiscount.innerHTML = `No tienes descuentos disponibles ☹`;
       let messageBodyModal = document.getElementById("modalMessage");
-      messageBodyModal.textContent = `En total sólo pagarás ${resultado}😉`;
+      messageBodyModal.textContent = `En total sólo pagarás ${resultado}€😉`;
+      resultDiscount.style.color = "gray";
     }
   }
 
   sumar();
-
-  /*let total =
-    Number(inputProductoOne.value) +
-    Number(inputProductoTwo.value) +
-    Number(inputProductoThree.value) +
-    Number(inputProductoFour.value) +
-    Number(inputProductoFive.value);
-  let discount = 15;
-  let totalDiscount = (total * discount) / 100;
-
-  let totalWithDiscount = total - totalDiscount;
-
-  resultTotal.innerHTML = `PRECIO TOTAL: ${total}€`;
-  resultDiscount.innerHTML = `PRECIO CON DESCUENTO: ${totalWithDiscount}€ 👌`;
-  let messageBodyModal = document.getElementById("modalMessage");
-  messageBodyModal.textContent = `Wow tu descuento es de ${totalDiscount}€!! Eso es un gran descuento! En total sólo pagarás ${totalWithDiscount}😉`;*/
 }
 
 /*Esta función showModal() es para mostrar el modal*/
